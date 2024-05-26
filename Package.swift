@@ -22,6 +22,7 @@ let package = Package(
 				.product(name: "ogg", package: "COgg")
 			],
 			cSettings: [
+				.define("HAVE_CONFIG_H"),
 				.headerSearchPath("."),
 			]),
 		.testTarget(
